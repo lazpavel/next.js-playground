@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'apod.nasa.gov',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'main.dinkaygu8ph50.amplifyapp.com',
+        port: '',
+      }
     ],
   },
 }
