@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.amplifyapp.com',
+        hostname: '**.nasa.gov',
         port: '',
       },
     ],

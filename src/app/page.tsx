@@ -39,6 +39,27 @@ export default function Home() {
         />
       </div>
 
+      <div className={styles.center}>
+        <Image
+          src="/iris-nebula.jpeg"
+          alt="Next.js Logo"
+          width={500}
+          height={500}
+          priority
+          quality={100}
+        />
+      </div>
+      <div className={styles.center}>
+        <Image
+          src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001465/GSFC_20171208_Archive_e001465~small.jpg"
+          alt="Next.js Logo"
+          width={500}
+          height={500}
+          priority
+          quality={100}
+        />
+      </div>
+
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
