@@ -8,6 +8,11 @@ const nextConfig = {
         hostname: '**.nasa.gov',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'lazpavel-test-image-optimization.s3.us-west-2.amazonaws.com',
+        port: '',
+      }
     ],
   },
 }
