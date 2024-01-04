@@ -41,45 +41,21 @@ export default function Home() {
 
       <div className={styles.center}>
         <Image
-          src="https://lazpavel-test-image-optimization.s3.us-west-2.amazonaws.com/giphy.gif"
-          alt="Next.js Logo"
-          width={500}
-          height={500}
+          src="https://photojournal.jpl.nasa.gov/jpeg/PIA04965.jpg"
+          alt="Continent"
+          width={1000}
+          height={800}
           priority
-          quality={100}
         />
       </div>
 
       <div className={styles.center}>
         <Image
-          src="/giphy.gif"
-          alt="Next.js Logo"
-          width={500}
-          height={500}
+          src="/continent.jpeg"
+          alt="Continent"
+          width={1000}
+          height={800}
           priority
-          quality={100}
-        />
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          src="/iris-nebula.jpeg"
-          alt="Next.js Logo"
-          width={500}
-          height={500}
-          priority
-          quality={100}
-        />
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001465/GSFC_20171208_Archive_e001465~small.jpg"
-          alt="Next.js Logo"
-          width={500}
-          height={500}
-          priority
-          quality={100}
         />
       </div>
 
