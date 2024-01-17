@@ -1,7 +1,7 @@
 customHeaders:
   - pattern: '/api/*'
     headers:
-      - key: 'Test Custom Header'
+      - key: 'Test-Custom-Header'
         value: 'Test'
       - key: 'Access-Control-Allow-Methods'
         value: 'GET,POST,OPTIONS'
