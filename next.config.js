@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // cacheHandler: require.resolve('/Users/lazpavel/Amazon/github/amplify-hosting-cache/dist/shared-key-value-storage.js'),
+  cacheHandler: require.resolve('/home/development/github/lazpavel/key-value-storage/dist/key-value-storage.js'),
   cacheMaxMemorySize: 0, // disable default in-memory caching
   images: {
     remotePatterns: [
