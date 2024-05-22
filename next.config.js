@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // cacheHandler: require.resolve('/Users/lazpavel/Amazon/github/key-value-storage/dist/key-value-storage.js'),
+  // cacheHandler: 
   // cacheMaxMemorySize: 0, // disable default in-memory caching
   images: {
     remotePatterns: [
