@@ -16,6 +16,21 @@ const nextConfig = {
       }
     ],
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/redirect-me',
+        destination: '/redirected',
+        permanent: true,
+      },
+      {
+        source: '/redirect-posts/:id',
+        destination: '/posts/:id',
+        permanent: true,
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig

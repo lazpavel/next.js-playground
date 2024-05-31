@@ -13,7 +13,7 @@ export default function StaticRevalidatePage({ buildTime }: { buildTime: string 
     <div>
       <p>This is a static page revalidated every 10 seconds.</p>
       <p>Generated at: {buildTime}</p>
-      <p>Displayed at: {displayTime}</p>
+      <p suppressHydrationWarning>Displayed at: {displayTime}</p>
     </div>
   );
 }

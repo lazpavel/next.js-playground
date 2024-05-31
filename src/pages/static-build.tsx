@@ -4,7 +4,7 @@ export default function StaticBuildPage() {
     <div>
       <p>This is a static page generated at build time. Updated</p>
       <p>Generated at: {buildTime}</p>
-      <p>Displayed at: {new Date().toISOString()}</p>
+      <p suppressHydrationWarning>Displayed at: {new Date().toISOString()}</p>
     </div>
   );
 }
