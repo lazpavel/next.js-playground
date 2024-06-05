@@ -20,6 +20,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/post/:slug(\\d{1,})',
+        destination: '/posts/:slug',
+        permanent: true,
+      },
+      {
+        source: '/old-blog/:first*/should-be-here/:second*',
+        destination: '/new-blog/:first*/should-be-here/:second*',
+        permanent: false,
+      },
+      {
         source: '/redirect-me',
         destination: '/redirected',
         permanent: true,
