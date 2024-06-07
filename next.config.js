@@ -38,9 +38,32 @@ const nextConfig = {
         source: '/redirect-posts/:id',
         destination: '/posts/:id',
         permanent: true,
-      }
+      },
+      {
+        permanent: true,
+        source: '/full-redirect-rule/:path*',
+        destination: '/:method/:path*',
+        has: [
+          {
+            type: 'query',
+            key: 'method',
+            value: '(?<method>create|update)',
+          },
+        ],
+        missing: [
+          {
+            type: 'host',
+            value: 'not-amplifyapp.com',
+          },
+          {
+            type: 'header',
+            key: 'x-amplify-optimized',
+            value: ':no-cache(no-cache)',
+          }
+        ],
+      },
     ]
-  }
+  },
 }
 
 module.exports = nextConfig
