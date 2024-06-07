@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/base',
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: 'en',
+  },
   // cacheHandler: 
   // cacheMaxMemorySize: 0, // disable default in-memory caching
   images: {
