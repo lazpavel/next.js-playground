@@ -95,6 +95,20 @@ const nextConfig = {
         ],
       },
     ]
+  },
+
+  async headers() {
+    return [
+      {
+        source: '/header-rule',
+        headers: [
+          {
+            key: 'x-amplify-optimized',
+            value: 'true',
+          },
+        ],
+      },
+    ]
   }
 }
 
